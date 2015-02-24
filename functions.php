@@ -27,27 +27,7 @@ add_theme_support( 'nav-menus' );
         'primary' => 'Primary Navigation'
 ) );
 
-/***********************************************
-* MENU RENDERER
-***********************************************/
-function render_menu(){
-    
-    $url = get_bloginfo( 'url' );
-    $illustLink = get_post_type_archive_link('illustration');
-    $designLink = get_post_type_archive_link('design');
-    $blogLink = pc_category_link('Blog');
-    $aboutLink = $url . '/me/';   
-    
-    $mainMenu = '<menu class="main-menu">';
-    $mainMenu .= '<a class="illustration-menu" href="' . $illustLink . '" data-blank="black"><span>Illustration</span></a>';
-    $mainMenu .= '<a class="design-menu" href="' . $designLink . '"><span>Design</span></a>';
-    $mainMenu .= '<a class="blog-menu" href="' . $blogLink . '"><span>Blog</span></a>';
-    $mainMenu .= '<a class="about-me-menu" href="' . $aboutLink . '" data-blank="black"><span>About Me</span></a>';         
-    $mainMenu .= '<a class="contact-menu" href="#contact"><span>Contact</span></a>';     
-    $mainMenu .= '</menu>';
 
-    echo $mainMenu;
-}
 
 
 /***********************************************

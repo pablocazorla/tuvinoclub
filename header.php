@@ -40,44 +40,33 @@
 	<noscript>	
 		<div class="noscript-message">Please, enable javascript in your browser, in order to get a better experience.</div>
 	</noscript>
-	<!--
-	<header id="header-main" <?php if(is_home()){echo 'class="hidden"';}?>>
+	<header id="header-main">
 		<div class="wrap clearfix">
-			<a href="<?php bloginfo( 'url' ); ?>" class="brand no-hash bubble bubble-bottom" title="<?php bloginfo( 'description' ); ?>" data-blank="black">				
-				<?php bloginfo( 'name' ); ?>				
-			</a>
-			<?php render_menu(); ?>
-		</div>					
+			<a href="<?php bloginfo( 'url' ); ?>" class="brand"><?php bloginfo( 'name' ); echo ' | '; bloginfo( 'description' );?></a>
+
+			<menu id="menu-main">
+				<ul>
+					<?php wp_nav_menu(array( 'container' => '','items_wrap' => '%3$s' )); ?>
+
+					<?php global $woocommerce; ?>
+					<li class="menu-item-cart">
+						<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo sprintf(_n('%d', $woocommerce->cart->cart_contents_count, 'woothemes'));?></a>
+					</li>
+					<li class="menu-item-account" style="display:none">
+						<?php if ( is_user_logged_in() ) { ?>
+						<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('My Account','woothemes'); ?></a>
+						<?php } else { ?>
+						<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login/Register','woothemes'); ?></a>
+						<?php } ?>
+					</li>
+				</ul>				
+			</menu>
+		</div>
 	</header>
-	<div id="dim-header"></div>
-	<div id="res-menu-btn">
+	<div id="header-responsive-dimmer"></div>
+	<div id="header-responsive-button">
 		<span></span>
 		<span></span>
 		<span></span>
-	</div>
-	<div id="res-menu-dimmer"></div>
--->
-<p>HEADER
-
-<?php wp_nav_menu(); ?>
-</p>
-<div>
- 		<h2>CARRITO</h2>
-		<?php global $woocommerce; ?>
- 
-<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
-	<?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?></a>
-
-
-
-		</div>
-		<div>
-			<h2>ACCOUNT</h2>
-			 <?php if ( is_user_logged_in() ) { ?>
- 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('My Account','woothemes'); ?></a>
- <?php } 
- else { ?>
- 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login / Register','woothemes'); ?></a>
- <?php } ?>
-		</div>
+	</div>		
 	<div id="content-main">
