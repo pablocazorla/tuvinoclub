@@ -10,14 +10,13 @@ PANDORA.open(function(){
 
 		switch(dataPage.page){
 			case 'home':
-				console.log('Es la Home');
+				PANDORA.log('Home');
 				break;
 			default:
 				//
 		}
-	};
 
-	// Initial
+	};
 
 
 

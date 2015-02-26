@@ -15,7 +15,7 @@ Tags: pablo, cazorla, wine, shop
 .clearfix,.row{zoom:1}
 
 /* BASICS **********************************************************************************************************/
-body{color:#333;min-width: 280px;overflow-x: hidden;overflow-y: scroll}
+body{color:#333;min-width: 280px;overflow-x: hidden;overflow-y: scroll;padding-top: 60px;}
 .ie-lt-8 body{min-width: 1024px;overflow: auto;}
 body,input,textarea{font: 18px/1.5em 'Raleway', sans-serif;}
 
@@ -61,7 +61,7 @@ hr{height:0;border:none;border-top:dotted 1px #AAA;background-color: transparent
 	top: 0;left:0;
 	width:100%;
 	background-color: #FFF;
-	border-bottom: solid 1px #2f3336;
+
 	overflow: hidden
 }
 #content-main.frozen{
@@ -108,3 +108,100 @@ section{
 	display: block;
 	padding: 0 10px;
 }
+
+/* WOOCOMMERCE *******************************************************************/
+.woocommerce-main{
+	background-color: #DDD;
+	padding: 1px 0;
+}
+.wrap-woo{
+	width: 92%;
+	max-width: 1200px;
+	margin: 50px auto;
+	background-color: #FFF;
+	padding:50px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+/* SHOP *******************************************************/
+.shop-container{}
+.shop-container .woocommerce-result-count{
+	float: left
+}
+.shop-container .woocommerce-ordering{
+	text-align: right;margin-bottom: 70px;
+}
+/* clearfix */
+.wrap-woo ul.products:before,.wrap-woo ul.products:after{content:"";display:table}
+.wrap-woo ul.products:after{clear:both}
+.wrap-woo ul.products{zoom:1}
+
+.wrap-woo ul.products{
+	margin: 0 -30px;
+}
+.wrap-woo ul.products li{
+	float:left;width:33.33333333%;
+	padding: 0 30px; margin-bottom: 50px;
+}
+.wrap-woo ul.products li a{
+	position: relative;
+	display: block;
+	color: #333;
+	text-decoration: none;
+}
+.wrap-woo ul.products li a .onsale{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: green;color: #FFF
+}
+.wrap-woo ul.products li img{
+	display: block;
+	width: 100% !important;height: auto !important;
+}
+
+/* Product *******************************************************/
+.product-container{}
+
+/* clearfix */
+.wrap-woo .product:before,.wrap-woo .product:after{content:"";display:table}
+.wrap-woo .product:after{clear:both}
+.wrap-woo .product{zoom:1}
+
+.wrap-woo .product{
+	position: relative;
+}
+.wrap-woo .product .onsale{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: green;color: #FFF
+}
+.wrap-woo .product .images{
+	float: left;
+	width:45%;
+}
+
+.product-container .product .images img{
+	display: block;
+	width: 100% !important;height: auto !important;
+}
+
+.product-container .product .images .thumbnails{
+	margin: 20px 0;
+}
+.product-container .product .images .thumbnails a{
+	display: inline-block;max-width: 80px;margin:0 10px 10px 0;
+	border: solid 1px #CCC;
+}
+
+.product-container .product .summary,
+.product-container .product .woocommerce-tabs{margin-left: 50%}
+
+
+
+.quantity{
+	
+}
+
+ 

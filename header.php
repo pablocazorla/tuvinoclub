@@ -1,8 +1,8 @@
 <!doctype HTML>
-<!--[if IE 7]>    <html class="ie7 ie-lt-8 ie-lt-9 ie-lt-10" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="ie8 ie-lt-9 ie-lt-10" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="ie9 ie-lt-10" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie-lt-8 ie-lt-9 ie-lt-10" lang="es"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie-lt-9 ie-lt-10" lang="es"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie-lt-10" lang="es"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="es"> <!--<![endif]-->
 <head>	
 	<title><?php get_page_title(); ?></title>
 		
@@ -11,10 +11,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="resource-type" content="document" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta http-equiv="content-language" content="en-us" />
+	<meta http-equiv="content-language" content="es-ar" />
 	<meta name="author" content="Pablo Cazorla" />
 	<meta name="contact" content="contact@pcazorla.com" />
-	<meta name="copyright" content="Designed by Pablo Cazorla - All rights reserved - <?php echo date('Y'); ?>." />
+	<meta name="copyright" content="Tu Vino Club - All rights reserved - <?php echo date('Y'); ?>." />
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:300,400' rel='stylesheet' type='text/css'>
 	<link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet" type="text/css" />
@@ -48,7 +48,10 @@
 				<ul>
 					<?php wp_nav_menu(array( 'container' => '','items_wrap' => '%3$s' )); ?>
 
-					<?php global $woocommerce; ?>
+					<?php 
+						if ( class_exists( 'WooCommerce' ) ) {
+							global $woocommerce;
+					?>
 					<li class="menu-item-cart">
 						<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo sprintf(_n('%d', $woocommerce->cart->cart_contents_count, 'woothemes'));?></a>
 					</li>
@@ -59,6 +62,7 @@
 						<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login/Register','woothemes'); ?></a>
 						<?php } ?>
 					</li>
+					<?php } ?>
 				</ul>				
 			</menu>
 		</div>
