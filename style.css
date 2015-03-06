@@ -6,8 +6,12 @@ Author: Pablo Cazorla
 Version: 1.0
 Tags: pablo, cazorla, wine, shop
 */
-/* RESET */html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul,menu{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-/* NORMALIZE */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}*:focus {outline: 0}/*RESET*/html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul,menu{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*, *:before, *:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+/* RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+*, *:before, *:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 /* Clearfix */
 .clearfix:before,.row:before,
 .clearfix:after,.row:after{content:"";display:table}
@@ -15,26 +19,26 @@ Tags: pablo, cazorla, wine, shop
 .clearfix,.row{zoom:1}
 
 /* BASICS **********************************************************************************************************/
-body{color:#333;min-width: 280px;overflow-x: hidden;overflow-y: scroll;padding-top: 60px;}
+body{color:#444;min-width: 280px;overflow-x: hidden;overflow-y: scroll;padding-top: 60px;background-color: #DDD}
 .ie-lt-8 body{min-width: 1024px;overflow: auto;}
-body,input,textarea{font: 18px/1.5em 'Raleway', sans-serif;}
+body,input,textarea{font: 16px/1.5em 'Raleway', sans-serif;}
 
-h1{font-size: 50px;margin-bottom: 16px;}
-h2{font-size: 40px}
-h3{font-size: 32px}
-h4{font-size: 24px}
+h1{font-size: 38px;margin: 30px 0;}
+h2{font-size: 32px}
+h3{font-size: 26px}
+h4{font-size: 22px}
 h5{font-size: 16px}
 h6{font-size: 10px}
 h4,h5,h6{font-weight: bold;}
 h2,h3,h4,h5,h6{padding-top: 15px;margin-bottom: 15px;}
-h1,h2,h3,h4,h5,h6{line-height: 1em;font-weight: 300;}
+h1,h2,h3,h4,h5,h6{line-height: 1em;font-weight: 300;color:#111;}
 
-p{margin-bottom: 24px;}
+p{margin-bottom: 15px;}
 
 a,a:link,a:visited{color:#0F9AEF;text-decoration: none;}
 a:hover{text-decoration: underline;}
 a:active,a:focus {outline: none;}
-
+abbr[title]{border-bottom:none}
 strong,b{font-weight: bold;}
 i,em{font-style: italic;}
 code{font-family: monospace;font-weight: bold;display: inline-block;background-color:#FFF;border:solid 1px #BBB;padding: 0 6px; border-radius: 3px}
@@ -60,18 +64,25 @@ hr{height:0;border:none;border-top:dotted 1px #AAA;background-color: transparent
 	z-index: 1;
 	top: 0;left:0;
 	width:100%;
-	background-color: #FFF;
-
 	overflow: hidden
 }
 #content-main.frozen{
 	position: fixed;
 	bottom: 0;	
 }
-.wrap,.wrap-min,.wrap-max{position:relative;width: 92%;margin-left: auto;margin-right: auto}
-.wrap{max-width:1200px}
+
+#article-main{
+	padding: 1px 0 20px;
+}
+
+
+.wrap,.wrap-min,.wrap-max{position:relative;width: 92%;margin-left: auto;margin-right: auto;
+padding: 1px 0}
+.wrap{max-width:1100px}
 .wrap-min{max-width:900px}
 .wrap-max{max-width:100%}
+
+
 
 /* COMMON ***************************************************/
 .softlight{opacity: 0}
@@ -91,7 +102,7 @@ section{
 
 #header-main .brand{
 	position: absolute;top: 0;left: 0;
-	display: block;width:220px;height: 60px;
+	display: block;width:220px;height: 59px;
 	background-color: #EEE;text-indent: -99999px;
 }
 
@@ -109,99 +120,105 @@ section{
 	padding: 0 10px;
 }
 
-/* WOOCOMMERCE *******************************************************************/
-.woocommerce-main{
-	background-color: #DDD;
-	padding: 1px 0;
+/* FORM ***************************************************************/
+form{
+	text-align: left;
+	margin: 0 -20px 30px;
 }
-.wrap-woo{
-	width: 92%;
-	max-width: 1200px;
-	margin: 50px auto;
-	background-color: #FFF;
-	padding:50px;
-	border-radius: 10px;
-	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+form p{
+	padding: 0 20px;
 }
-/* SHOP *******************************************************/
-.shop-container{}
-.shop-container .woocommerce-result-count{
-	float: left
-}
-.shop-container .woocommerce-ordering{
-	text-align: right;margin-bottom: 70px;
-}
-/* clearfix */
-.wrap-woo ul.products:before,.wrap-woo ul.products:after{content:"";display:table}
-.wrap-woo ul.products:after{clear:both}
-.wrap-woo ul.products{zoom:1}
 
-.wrap-woo ul.products{
-	margin: 0 -30px;
+label{
+	display: block;
+	font-size: .85em;
+	color: #666
 }
-.wrap-woo ul.products li{
-	float:left;width:33.33333333%;
-	padding: 0 30px; margin-bottom: 50px;
+label .required{
+	font-size: 1.3em;
+	color: #D03;
 }
-.wrap-woo ul.products li a{
+
+input[type="text"],
+input.input-text,
+textarea,
+input.txt,
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="file"],
+input[type="number"],
+input[type="color"],
+textarea,
+select{
+  padding: .53em;
+  border: 0;
+  font-size: 1em;
+  line-height: 1.618em;
+  outline: none;
+  background: #fff;
+  color: #111;
+  border: 1px solid #CCC;
+  width: 100%;
+}
+input[type="text"]:focus,
+input.input-text:focus,
+textarea:focus,
+input.txt:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="file"]:focus,
+input[type="number"]:focus,
+input[type="color"]:focus,
+textarea:focus{
+  border-color: #999;
+}
+
+
+select{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	padding-right: 34px;
 	position: relative;
-	display: block;
-	color: #333;
-	text-decoration: none;
-}
-.wrap-woo ul.products li a .onsale{
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: green;color: #FFF
-}
-.wrap-woo ul.products li img{
-	display: block;
-	width: 100% !important;height: auto !important;
+	background-image: url('img/select-bg.png');
+	background-position: right center;
+	background-repeat: no-repeat;
 }
 
-/* Product *******************************************************/
-.product-container{}
-
-/* clearfix */
-.wrap-woo .product:before,.wrap-woo .product:after{content:"";display:table}
-.wrap-woo .product:after{clear:both}
-.wrap-woo .product{zoom:1}
-
-.wrap-woo .product{
-	position: relative;
-}
-.wrap-woo .product .onsale{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: green;color: #FFF
-}
-.wrap-woo .product .images{
-	float: left;
-	width:45%;
-}
-
-.product-container .product .images img{
-	display: block;
-	width: 100% !important;height: auto !important;
-}
-
-.product-container .product .images .thumbnails{
-	margin: 20px 0;
-}
-.product-container .product .images .thumbnails a{
-	display: inline-block;max-width: 80px;margin:0 10px 10px 0;
-	border: solid 1px #CCC;
-}
-
-.product-container .product .summary,
-.product-container .product .woocommerce-tabs{margin-left: 50%}
 
 
 
-.quantity{
-	
-}
 
- 
+input[disabled],textarea[disabled]{opacity:.6;}
+
+textarea {resize: none;}
+
+::-webkit-input-placeholder {opacity:1;color: #999}
+:-moz-placeholder {opacity:1;color: #999}
+::-moz-placeholder {opacity:1;color: #999}
+:-ms-input-placeholder {opacity:1;color: #999}
+
+
+
+/* FOOTER *******************************/
+
+#footer-main{
+	background-color: #222;
+	color: #EEE;
+	text-align: center;
+	padding: 20px 0;
+}

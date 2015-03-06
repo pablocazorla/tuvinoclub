@@ -136,15 +136,19 @@ add_filter('add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment');
 
 
 function wooClass(){
-    $classContainer = '';
+    $classContainer = 'woo';
     if ( class_exists( 'WooCommerce' ) ) {
         if(is_shop()){
-            $classContainer = 'shop-container';
+            $classContainer = 'shop';
         } else if(is_product()){
-            $classContainer = 'product-container';
+            $classContainer = 'product';
         }
     }
     echo $classContainer;
+}
+
+function isWoocommercePage(){
+    return is_woocommerce() || is_cart() || is_checkout();
 }
 
 

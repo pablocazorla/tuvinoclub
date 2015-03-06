@@ -16,8 +16,9 @@
 	<meta name="contact" content="contact@pcazorla.com" />
 	<meta name="copyright" content="Tu Vino Club - All rights reserved - <?php echo date('Y'); ?>." />
 
-	<link href='http://fonts.googleapis.com/css?family=Raleway:300,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
 	<link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet" type="text/css" />
+	<link href="<?php bloginfo('template_url'); ?>/woocommerce.css" rel="stylesheet" type="text/css" />
 	<noscript>	
 		<link href="<?php bloginfo('template_url'); ?>/noscript.css" rel="stylesheet" type="text/css" />
 	</noscript>
@@ -36,7 +37,10 @@
 	</script>		
 	<?php wp_head(); ?>	
 </head>
-<body>
+
+
+
+<body <?php if(isWoocommercePage()){ echo 'class="woobody"';}?>>
 	<noscript>	
 		<div class="noscript-message">Please, enable javascript in your browser, in order to get a better experience.</div>
 	</noscript>
